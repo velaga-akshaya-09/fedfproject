@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
 import Login from "./pages/Login";
@@ -14,7 +14,7 @@ function App() {
   const { user } = useContext(AuthContext);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="app-container">
         {user && <Navbar />}
         <main className="main-content">
@@ -44,7 +44,7 @@ function App() {
           </Routes>
         </main>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
