@@ -110,29 +110,23 @@ const Login = () => {
           <div className="social-buttons">
             <button
               type="button"
-              className="btn btn-google"
+              className="btn btn-social btn-google"
               onClick={() => handleSocialLogin('google')}
               disabled={loading}
-              style={{ justifyContent: 'center', gap: '0.5rem', position: 'relative' }}
+              aria-label="Continue with Google"
             >
-              <span>🌐</span>
-              <div style={{ textAlign: 'left', flex: 1 }}>
-                <div style={{ fontWeight: '600', fontSize: '0.9rem' }}>Continue with Google</div>
-                <div style={{ fontSize: '0.75rem', opacity: 0.8 }}>akshaya@gmail.com</div>
-              </div>
+              <span className="social-icon">G</span>
+              <span>Continue with Google</span>
             </button>
             <button
               type="button"
-              className="btn btn-github"
+              className="btn btn-social btn-github"
               onClick={() => handleSocialLogin('github')}
               disabled={loading}
-              style={{ justifyContent: 'center', gap: '0.5rem', position: 'relative' }}
+              aria-label="Continue with GitHub"
             >
-              <span>⚫</span>
-              <div style={{ textAlign: 'left', flex: 1 }}>
-                <div style={{ fontWeight: '600', fontSize: '0.9rem' }}>Continue with GitHub</div>
-                <div style={{ fontSize: '0.75rem', opacity: 0.8 }}>akshaya@github.com</div>
-              </div>
+              <span className="social-icon"></span>
+              <span>Continue with GitHub</span>
             </button>
           </div>
           <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textAlign: 'center', marginTop: '1rem' }}>
